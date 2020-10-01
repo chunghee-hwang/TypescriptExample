@@ -11,14 +11,18 @@
     ```
 
 * ES6로 컴파일(ts > js 변환)  
-   tsconfig.json에 다음 항목 추가
-    ```
-    {
-        "compilerOptions": {
-            "target": "ES6"
+   * target 옵션 사용
+        ```bash
+        tsc source.ts -target es6
+        ```
+   * tsconfig.json에 다음 항목 추가  
+        ```json
+        {
+            "compilerOptions": {
+                "target": "ES6"
+            }
         }
-    }
-    ```
+        ```
 
 * ts 파일의 변경 사항을 감시하며 변경될 때마다 컴파일
     ```bash
