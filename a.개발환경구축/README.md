@@ -34,7 +34,3 @@
     ```
     node source.js
     ```
-* js 파일을 거치지 않고 바로 실행 가능
-    ```
-    node source.ts
-    ```
