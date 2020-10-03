@@ -4,3 +4,7 @@
 ## 학습 목록
 - [환경 구축](./a.개발환경구축)
 - [기본 자료형](./b.기본자료형)
+- [var, let, const](./c.var,let,const)
+- [Type Assertions, Type Alias](./d.TypeAssertions,TypeAlias)
+- [인터페이스](./e.인터페이스)
+- [클래스](./f.클래스)
