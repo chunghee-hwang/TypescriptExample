@@ -32,7 +32,10 @@
     ```bash
     tsc --project tsconfig.json -w
     ```
-
+* VS Code 내장 컴파일러 사용  
+    ts 파일 상에서
+    ``` Ctrl + Shift + B ``` 누르고 ```tsc: Build 파일명``` 클릭
+    
 4. 실행
 * tsc 명령어로 컴파일된 js 파일 실행
     ```
