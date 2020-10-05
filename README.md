@@ -8,3 +8,8 @@
 - [Type Assertions, Type Alias](./d.TypeAssertions,TypeAlias)
 - [인터페이스](./e.인터페이스)
 - [클래스](./f.클래스)
+- [제네릭](./g.Generic)
+- [이터레이터](./h.Iterator)
+- [데코레이터](./i.Decorator)
+- [타입 추론](./j.TypeInference)
+- [리액트와 타입스크립트](./k.reactandtypescript)
