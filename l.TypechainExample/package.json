@@ -1,0 +1,13 @@
+{
+  "name": "TypechainExample",
+  "version": "1.0.0",
+  "description": "Learning Typescript by making a Blockchain with it",
+  "main": "index.ts",
+  "repository": "https://github.com/hch0821/TypescriptExample/tree/master/l.TypechainExample",
+  "author": "CH Hwang <hch0821@gmail.com>",
+  "license": "MIT",
+  "scripts":{
+    "start":"node index.js",
+    "prestart": "tsc"
+  }
+}
