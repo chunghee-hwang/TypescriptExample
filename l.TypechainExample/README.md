@@ -16,6 +16,8 @@ sudo apt update && sudo apt install yarn
 
 cd projectName
 yarn init
+yarn add tsc-watch --dev
+npm i - D @types/node typescript ts-node
 ```
 
 ## tsconfig.json
@@ -24,9 +26,11 @@ yarn init
     "compilerOptions": {
         "module": "CommonJS",
         "target": "ES2015",
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "outDir": "dist" // 컴파일 결과를 dist 폴더 밑으로 저장
     },
-    "include": ["index.ts"],
+    "include": ["src/**/*"], //  src 밑에 있는 것들을 모두 컴파일
     "exclude": ["node_modules"]
 }
 ```
@@ -34,11 +38,9 @@ yarn init
 ## Compile & execute
 ### package.json에 다음 추가
 ```js
-"scripts":
-{
-    "start":"node index.js", // 2. 변환된 js파일 실행
-    "prestart": "tsc" // 1. tsc로 먼저 js로 변환
-}
+"scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\""
+},
 ```
 ```bash
 # js 실행

@@ -2,8 +2,10 @@
     "compilerOptions": {
         "module": "CommonJS",
         "target": "ES2015",
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "outDir": "dist" // 컴파일 결과를 dist 폴더 밑으로 저장
     },
-    "include": ["index.ts"],
+    "include": ["src/**/*"], //  src 밑에 있는 것들을 모두 컴파일
     "exclude": ["node_modules"]
 }
